@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <title>Osnovno o Linuxu</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Osnovno o Linuxu</h1>
+  </header>
+
+  <button id="back-to-top-btn">Povratak na vrh</button>
+
+  <nav>
+    <ul>
+      <li><a href="#istorija">Istorija Linuxa</a></li>
+      <li><a href="#prednosti">Prednosti Linuxa</a></li>
+      <li><a href="#mane">Mane Linuxa</a></li>
+      <li><a href="#distribucije">Najpoznatije Linux distribucije</a></li>
+      <li><a href="#komande">Osnovne komande Bash-a</a></li>
+      <li><a href="#veza-linux-macos">Veza između Linuxa i macOS-a</a></li>
+    </ul>
+    <img src="Linux-Logo.png" alt="Linux Logo" style="max-width: 300px; max-height: 200px;" class="logo">
+  </nav>
+
+      <main>
+        <section id="istorija">
+          <h2>Istorija Linuxa</h2>
+          <p>Linux je operativni sistem koji je prvobitno razvijen kao projekat otvorenog koda (open-source) od strane Finskog programera Linusa Torvaldsa. Razvoj Linuxa započeo je 1991. godine, kada je Linus Torvalds bio student na Univerzitetu u Helsinkiju. On je želeo da kreira sopstveni operativni sistem inspirisan UNIX-om, ali koji će biti besplatan i dostupan širokom krugu korisnika.</p>
+          <p>Torvalds je počeo sa razvojem jezgra operativnog sistema koje je nazvao "Linux". Jezgro Linuxa je bilo osnova na kojoj su se gradili razni softverski slojevi i aplikacije, formirajući celokupni operativni sistem. Torvaldsov projekat privukao je veliku pažnju i podršku programera širom sveta koji su pridonosili razvoju i unapređivanju Linuxa.</p>
+          <p>Važno je napomenuti da je Linux baziran na UNIX filozofiji i nasleđu. UNIX je operativni sistem koji je razvijen još 1970-ih godina na Belovim laboratorijama (Bell Labs) u Sjedinjenim Američkim Državama. UNIX je bio moćan i stabilan operativni sistem, ali je bio skup i dostupan samo na odabranim sistemima. Linux je doneo ideju da se moćan operativni sistem može razvijati i koristiti slobodno i otvoreno.</p>
+          <p>Kroz godine, Linux je postao veoma popularan i dobio je podršku velikog broja programera, korisnika i kompanija. Danas se Linux koristi širom sveta u različitim domenima, uključujući serverske sisteme, superkompjutere, ugradne sisteme, mobilne uređaje, pametne televizore i još mnogo toga. Takođe, postoji veliki broj distribucija Linuxa (kao što su Ubuntu, Fedora, Debian, CentOS itd.) koje pružaju različite konfiguracije i pakete softvera kako bi zadovoljile potrebe različitih korisnika.</p>
+          <p>Linux je postao simbol slobodnog softvera i otvorenog koda, inspirišući zajednicu programera i promovišući ideje deljenja znanja i saradnje. Linux je takođe važan deo mnogih drugih popularnih projekata i tehnologija, kao što su Android operativni sistem, serveri sa otvorenim kodom i cloud infrastruktura.</p>
+          <img src="linus.jpeg" alt="Linus Torvalds" style="max-width: 1024px; max-height: 512px;" class="centered-image">
+        </section>
+
+        <section id="prednosti">
+          <h2>Prednosti Linuxa</h2>
+          <ul>
+            <li>Slobodan i otvoren kod</li>
+            <li>Visoka stabilnost i sigurnost</li>
+            <li>Veliki izbor distribucija i konfiguracija</li>
+            <li>Odlična podrška zajednice i dokumentacija</li>
+            <li>Skalabilnost i prilagodljivost</li>
+          </ul>
+        </section>
+
+        <section id="mane">
+          <h2>Mane Linuxa</h2>
+          <ul>
+            <li>Nedostatak podrške za određeni softver</li>
+            <li>Veći zahtevi za tehničkim znanjem</li>
+            <li>Hardverska kompatibilnost može biti izazovna</li>
+            <li>Manje podrške za igre i određene multimedijalne aplikacije</li>
+          </ul>
+        </section>
+
+        <section id="distribucije">
+          <h2>Najpoznatije Linux distribucije</h2>
+          <ul>
+            <li>
+              <h3>Ubuntu</h3>
+              <p>Ubuntu je jedna od najpopularnijih Linux distribucija koja se fokusira na jednostavnost korišćenja i pružanje stabilnog i sigurnog operativnog sistema. Za više informacija, posetite <a href="https://ubuntu.com" target="_blank">zvanični sajt Ubuntu-a</a>.</p>
+            </li>
+            <li>
+              <h3>Fedora</h3>
+              <p>Fedora je napredna Linux distribucija koja je poznata po svojoj tehnološkoj inovativnosti i podršci najnovijim tehnologijama. Za više informacija, posetite <a href="https://getfedora.org" target="_blank">zvanični sajt Fedore</a>.</p>
+            </li>
+            <li>
+              <h3>Debian</h3>
+              <p>Debian je jedna od najstarijih i najuticajnijih Linux distribucija koja je poznata po svojoj stabilnosti, sigurnosti i ogromnoj bazi softvera. Za više informacija, posetite <a href="https://www.debian.org" target="_blank">zvanični sajt Debiana</a>.</p>
+            </li>
+            <li>
+              <h3>CentOS</h3>
+              <p>CentOS je besplatan klon komercijalne distribucije Red Hat Enterprise Linux (RHEL) i pruža dugoročnu stabilnost i podršku. Za više informacija, posetite <a href="https://www.centos.org" target="_blank">zvanični sajt CentOS-a</a>.</p>
+            </li>
+          </ul>
+          <p>Naravno, ovo su samo neke od mnogih distribucija Linuxa koje su dostupne, i svaka ima svoje jedinstvene karakteristike i primene.</p>
+        </section>
+
+        <section id="komande">
+            <h2>Osnovne komande Bash-a</h2>
+            <p>Bash (Bourne Again SHell) je popularna ljuska (shell) za Unix-bazirane operativne sisteme, uključujući Linux.</p>
+
+            <h3>Prikaz direktorijuma</h3>
+            <p><code>ls</code>: Prikazuje sadržaj trenutnog direktorijuma.</p>
+
+            <h3>Promena direktorijuma</h3>
+            <p><code>cd</code>: Promena trenutnog direktorijuma.</p>
+
+            <h3>Kreiranje direktorijuma</h3>
+            <p><code>mkdir</code>: Kreira novi direktorijum.</p>
+
+            <h3>Kopiranje fajlova</h3>
+            <p><code>cp</code>: Kopira fajl/e iz jednog direktorijuma u drugi.</p>
+
+            <h3>Pomeranje fajlova</h3>
+            <p><code>mv</code>: Pomiče fajl/e iz jednog direktorijuma u drugi ili menja ime fajla.</p>
+
+            <h3>Brisanje fajlova i direktorijuma</h3>
+            <p><code>rm</code>: Briše fajl/e.</p>
+            <p><code>rmdir</code>: Briše prazne direktorijume.</p>
+            <p><code>rm -r</code>: Briše direktorijum i njegov sadržaj rekurzivno.</p>
+
+            <h3>Kreiranje i uređivanje fajlova</h3>
+            <p><code>touch</code>: Kreira prazan fajl ili ažurira vreme poslednje izmene postojećeg fajla.</p>
+            <p><code>nano</code>: Otvara fajl u tekstualnom editoru Nano.</p>
+
+            <h3>Prikaz sadržaja fajla</h3>
+            <p><code>cat</code>: Prikazuje sadržaj fajla.</p>
+
+            <h3>Ispis na ekran</h3>
+            <p><code>echo</code>: Ispisuje tekst na ekran ili ga preusmerava u fajl.</p>
+
+            <h3>Pokretanje programa ili skripti</h3>
+            <p><code>./ime_skripte.sh</code>: Pokreće Bash skriptu.</p>
+
+            <h3>Redirekcija i cevčice</h3>
+            <p><code>&gt;</code>: Preusmerava izlaz u fajl (pisanje).</p>
+            <p><code>&lt;</code>: Preusmerava ulaz iz fajla (čitanje).</p>
+            <p><code>|</code>: Povezuje izlaz jedne komande sa ulazom druge komande.</p>
+        </section>
+
+        <section id="veza-linux-macos">
+          <h2>Veza između Linuxa i macOS-a</h2>
+          <p>Linux i macOS su dva operativna sistema koji se često upoređuju zbog nekih sličnosti, ali imaju i značajne razlike.</p>
+          <p>Linux je operativni sistem otvorenog koda i distribuira se pod različitim licencama, što korisnicima pruža slobodu da prilagođavaju i modifikuju sistem prema svojim potrebama. S druge strane, macOS je komercijalni operativni sistem koji je razvijen i održava Apple, i dostupan je samo za Apple računare.</p>
+          <p>Oba operativna sistema dele neke zajedničke korene, pošto je macOS, kao i Linux, inspirisan UNIX-om. To znači da postoje sličnosti u osnovnim konceptima i alatima koji se koriste na oba sistema.</p>
+          <p>Međutim, postoje i neke ključne razlike između ova dva operativna sistema. macOS ima svoj jedinstven grafički korisnički interfejs i pruža integrisano okruženje za razvoj aplikacija specifičnih za Apple platformu. Sa druge strane, Linux je prilagodljiv i može se koristiti na različitim hardverskim arhitekturama i konfiguracijama.</p>
+          <p>Uprkos svojim razlikama, postoje projekti kao što je Homebrew koji omogućavaju korisnicima macOS-a da instaliraju i koriste alate i pakete karakteristične za Linux. Takođe, postoje i distribucije Linuxa, poput Ubuntu, koje su posebno prilagođene korisnicima koji dolaze sa macOS-a i žele da iskoriste neke sličnosti i prednosti koje Linux pruža.</p>
+        </section>
+
+        <section id="izbor-autora">
+          <h3>Izbor autora: elementary OS</h3>
+          <p><em>elementary OS je elegantna Linux distribucija koja ima za cilj da pruži intuitivan i jednostavan korisnički interfejs, inspirisan tradicionalnim desktop okruženjem. Ova distribucija je poznata po svom minimalističkom dizajnu i fokusiranosti na detalje.</em></p>
+          <p><em>Glavne karakteristike elementary OS-a uključuju:</em></p>
+          <ul>
+            <li><em>Prelep i kohezivan korisnički interfejs</em></li>
+            <li><em>Jednostavna i intuitivna navigacija</em></li>
+            <li><em>Stabilnost i sigurnost</em></li>
+            <li><em>Odlična podrška za aplikacije i integraciju</em></li>
+            <li><em>Velika zajednica korisnika i razvojnih timova</em></li>
+          </ul>
+          <img src="desktop.jpg" alt="elementaryOS" style="max-width: 1024px; max-height: 512px;" class="image">
+          <p>Za više informacija o elementary OS distribuciji, posetite <a href="https://elementary.io" target="_blank">zvanični sajt elementary OS-a</a>.</p>
+        </section>
+
+      </main>
+
+  <footer>
+    <p class="footer-text">&copy; 2023 Osnovno o Linuxu. Sva prava zadržana.</p>
+  </footer>
+
+  <script>
+    const header = document.querySelector('header');
+    const originalColor = header.style.backgroundColor;
+  
+    header.addEventListener('click', function() {
+      header.style.backgroundColor = 'red';
+  
+      setTimeout(function() {
+        header.style.backgroundColor = originalColor;
+      }, 75);
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('nav ul li a');
+
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          const target = document.querySelector(this.getAttribute('href'));
+          target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const backToTopBtn = document.getElementById('back-to-top-btn');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 100) {
+          backToTopBtn.style.display = 'block';
+        } else {
+          backToTopBtn.style.display = 'none';
+        }
+      });
+
+      backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
